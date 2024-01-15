@@ -8,6 +8,15 @@ const Chords = () => {
       <span></span>
       <span></span>
       <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   );
 };
