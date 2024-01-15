@@ -1,0 +1,11 @@
+span {
+  background-color: blueviolet;
+  grid-area: 18 / 1;
+  border: 2px solid navy;
+}
+span:nth-child(2) {
+  grid-area: 15 / 1;
+}
+span:nth-child(3) {
+  grid-area: 11 / 1;
+}

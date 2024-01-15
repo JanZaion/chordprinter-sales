@@ -6,8 +6,3 @@
   grid-template-rows: repeat(20, 1fr);
   padding: 20px;
 }
-
-.note {
-  background-color: blueviolet;
-  grid-area: 18 / 1;
-}
