@@ -7,9 +7,7 @@ module.exports = {
     'airbnb',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
-    'plugin:prettier/recommended',
     'plugin:unicorn/recommended',
-    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -26,7 +24,6 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
     'import',
-    'prettier',
     'unicorn',
     'unused-imports',
     '@next/next',
@@ -104,15 +101,6 @@ module.exports = {
       {
         namedComponents: 'arrow-function',
         unnamedComponents: 'arrow-function',
-      },
-    ],
-    'prettier/prettier': [
-      'error',
-      {
-        singleQuote: true,
-        parser: 'flow',
-        semi: true,
-        usePrettierrc: true,
       },
     ],
     'react/jsx-filename-extension': ['error', { extensions: ['.mdx', '.tsx'] }],

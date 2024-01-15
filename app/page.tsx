@@ -1,7 +1,5 @@
-import styles from './page.module.css';
+import { Hi } from './components/hi/Hi';
 
-const Home = () => {
-  return <main className={styles.main}>hello world from chordprinter</main>;
-};
+const Home = () => <Hi />;
 
 export default Home;
