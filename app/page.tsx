@@ -4,10 +4,12 @@ import './globals.css';
 import Chords from './components/chords/Chords';
 
 const Home = () => (
-  <div className={styles.container}>
-    {/* <Hi /> */}
-    <Chords />
-  </div>
+  <main>
+    <div className={styles.container}>
+      {/* <Hi /> */}
+      <Chords />
+    </div>
+  </main>
 );
 
 export default Home;
