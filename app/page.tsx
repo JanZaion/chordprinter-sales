@@ -6,7 +6,7 @@ import Chords from './components/chords/Chords';
 const Home = () => (
   <main>
     <div className={styles.container}>
-      {/* <Hi /> */}
+      <Hi />
       <Chords />
     </div>
   </main>
