@@ -1,5 +1,4 @@
 import styles from './Chords.module.css';
-import './chords.css';
 
 const Chords = () => (
   <div className={styles.container}>
