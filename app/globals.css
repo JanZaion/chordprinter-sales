@@ -5,7 +5,8 @@
   --color-white: #fff;
   --color-grey: #909090;
   --color-body: rgba(0, 0, 0, 0.863);
-  --color-background: #1d1d1d;
+  --color-background-dark: #1d1d1d;
+  --color-background-light: #e4e4e4;
   --color-primary: #6645bf;
   --color-secondary: #ffb100;
 }

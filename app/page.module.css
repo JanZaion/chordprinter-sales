@@ -4,5 +4,5 @@
   min-height: 100vh;
   margin: 0 auto;
   overflow: hidden;
-  background-color: var(--color-background);
+  background-color: var(--color-background-dark);
 }
