@@ -12,11 +12,10 @@
 }
 
 .container span {
-  background-color: #6645bf;
+  background-color: var(--color-primary);
   grid-area: 14 / 1;
   margin: 2px;
 }
-
 .container span:nth-child(2) {
   grid-area: 11 / 1;
 }

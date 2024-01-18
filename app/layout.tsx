@@ -1,5 +1,13 @@
 import type { Metadata } from 'next';
+import { Roboto } from 'next/font/google';
 import type { ReactNode } from 'react';
+
+const roboto = Roboto({
+  weight: ['400', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Chordprinter',
@@ -12,7 +20,7 @@ type RootLayoutProps = {
 
 const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang="en">
-    <body>{children}</body>
+    <body className={roboto.className}>{children}</body>
   </html>
 );
 
