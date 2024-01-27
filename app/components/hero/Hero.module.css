@@ -10,20 +10,6 @@
   align-items: center;
 }
 
-.topContainer {
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  width: 100%;
-  min-width: 320px;
-  max-width: 1920px;
-  height: clamp(320px, 210px + 22vw, 380px);
-  display: grid;
-  grid-template-rows: repeat(15, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  padding: 20px;
-}
-
 .bottomContainer {
   position: absolute;
   grid-area: 7;
@@ -84,10 +70,6 @@
 }
 
 @media screen and (min-width: 780px) {
-  .topContainer {
-    height: 100svh;
-  }
-
   .bottomContainer {
     width: 100%;
     max-width: 100%;

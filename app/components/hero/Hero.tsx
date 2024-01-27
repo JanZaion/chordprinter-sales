@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import chAdvImage from '../../../public/images/chordprinterAdv.png';
-import styles from './Hero.module.css';
 import HeroButtons from './HeroButtons';
+import Chords from './Chords';
+import styles from './Hero.module.css';
+import chordsStyles from './Chords.module.css';
 
 const Hero = () => (
   <div className={styles.container}>
-    <div className={styles.topContainer}>
+    <Chords />
+    <div className={chordsStyles.container}>
       <h1 className={styles.title}>ChordPrinter</h1>
       <p className={styles.titleInfo}>Chord Progressions Just Became Easy</p>
-
       <div className={styles.bottomContainer}>
         <Image
           alt="Chordprinter Image"
