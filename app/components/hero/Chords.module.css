@@ -4,7 +4,7 @@
   z-index: 0;
   width: 100%;
   min-width: 320px;
-  max-width: 1920px;
+  max-width: 1728px;
   height: clamp(320px, 210px + 22vw, 380px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -12,9 +12,9 @@
   padding: 20px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1024px) {
   .container {
-    height: 100svh;
+    height: 885px;
   }
 }
 
@@ -57,5 +57,5 @@
   grid-area: 7/ 4;
 }
 .container span:nth-child(12) {
-  grid-area: 11 / 4;
+  grid-area: 12 / 4;
 }
