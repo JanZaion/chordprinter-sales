@@ -45,7 +45,7 @@
 .titleInfo {
   position: absolute;
   color: var(--color-white);
-  font-size: clamp(1.4rem, 0.5rem + 2.2vw, 3.2rem);
+  font-size: clamp(1.4rem, 0.5rem + 2.2vw, 3rem);
   grid-area: 6;
   right: 20px;
 }
@@ -151,7 +151,7 @@
   .chAdvImage {
     width: 350px;
     position: absolute;
-    bottom: -160px;
+    bottom: -165px;
     right: clamp(10px, -250px + 25vw, 200px);
   }
   .chBasImage {
@@ -173,7 +173,7 @@
 @media screen and (min-width: 1440px) {
   .chAdvImage {
     width: 420px;
-    bottom: -195px;
+    bottom: -190px;
     right: 15%;
   }
 }
