@@ -1,9 +1,11 @@
 import Image from 'next/image';
+
 import chAdvImage from '../../../public/images/chordprinterAdv.png';
 import chBasImage from '../../../public/images/chordprinterBasic.png';
+
 import Chords from './Chords';
-import styles from './Hero.module.css';
 import chordsStyles from './Chords.module.css';
+import styles from './Hero.module.css';
 
 const Hero = () => (
   <div className={styles.container}>
@@ -23,21 +25,21 @@ const Hero = () => (
           src={chBasImage}
         />
         <div className={styles.subtitle}>
-          Generate chord progressions instantly inside Ableton Live's clips.
-          Create loops that vibe with this Max for Live device!
+          Generate chord progressions instantly inside Ableton Live&apos;s
+          clips. Create loops that vibe with this Max for Live device!
         </div>
         <div className={styles.buttonContainer}>
           <a
+            className={styles.button}
             href="https://www.google.com/"
             target="blank"
-            className={styles.button}
           >
             Try demo
           </a>
           <a
+            className={styles.button}
             href="https://www.google.com/"
             target="blank"
-            className={styles.button}
           >
             Buy
           </a>

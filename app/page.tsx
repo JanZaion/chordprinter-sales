@@ -1,7 +1,7 @@
 import Hero from './components/hero/Hero';
+import HowItWorks from './components/howItWorks/HowItWorks';
 import styles from './page.module.css';
 import './globals.css';
-import HowItWorks from './components/howItWorks/HowItWorks';
 
 const Home = () => (
   <main>
