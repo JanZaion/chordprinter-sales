@@ -2,7 +2,6 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  min-width: 320px;
   height: 100svh;
   background-color: var(--color-background-light);
 }

@@ -3,7 +3,6 @@
   top: 0;
   z-index: 0;
   width: 100%;
-  min-width: 320px;
   height: clamp(320px, 210px + 22vw, 380px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
