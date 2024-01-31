@@ -18,7 +18,11 @@
 
 .headerContainer {
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 0;
+}
+
+.imageContainer {
+  margin: auto 0;
 }
 
 .secondImageContainer {
@@ -56,6 +60,7 @@
   .headerContainer {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding: 40px;
     margin: 10px 0 500px 0;
   }
   .secondImageContainer {

@@ -10,7 +10,7 @@ const HowItWorks = () => (
       <div className={styles.headerContainer}>
         <h2> Instant Chord Progressions</h2>
       </div>
-      <div className={styles.firstImageContainer}>
+      <div className={styles.imageContainer}>
         <Image
           alt="Chordprinter preview"
           className={styles.images}
@@ -39,7 +39,11 @@ const HowItWorks = () => (
         intuitive, easy to learn workflow. No music theory knowledge required to
         get started!
       </div>
-      <div className={styles.secondImageContainer}>
+      <div
+        className={[styles.imageContainer, styles.secondImageContainer].join(
+          ' ',
+        )}
+      >
         <Image
           alt="Chordprinter preview"
           className={styles.images}
