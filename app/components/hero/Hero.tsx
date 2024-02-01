@@ -13,6 +13,7 @@ const Hero = () => (
     <div className={styles.container}>
       <div className={chordsStyles.container}>
         <h1 className={styles.title}>ChordPrinter</h1>
+        <p className={styles.titleIntroducing}>Introducing</p>
         <p className={styles.titleInfo}>Chord Progressions Just Became Easy</p>
         <div className={styles.bottomContainer}>
           <Image

@@ -32,6 +32,14 @@
   transform: translate(-50%, -50%);
 }
 
+.titleIntroducing {
+  position: absolute;
+  color: var(--color-primary);
+  font-size: var(--fs-title-info);
+  grid-area: 3;
+  display: none;
+}
+
 .titleInfo {
   position: absolute;
   color: var(--color-white);
@@ -113,6 +121,7 @@
     height: 885px;
     min-height: 885px;
   }
+
   .bottomContainer {
     position: relative;
     display: block;
@@ -124,14 +133,23 @@
     grid-column-start: 1;
     grid-column-end: 5;
   }
+
   .title {
     padding-left: 45px;
     grid-area: 5;
     top: 5px;
   }
+
+  .titleIntroducing {
+    display: inherit;
+    top: 20px;
+    left: clamp(20px, -100px + 25vw, 330px);
+  }
+
   .titleInfo {
     right: clamp(20px, -100px + 15vw, 200px);
   }
+
   .subtitle {
     position: relative;
     width: 50%;
@@ -141,23 +159,27 @@
     background: transparent;
     box-shadow: none;
   }
+
   .chAdvImage {
     width: 350px;
     position: absolute;
     bottom: -165px;
     right: clamp(10px, -250px + 25vw, 200px);
   }
+
   .chBasImage {
     display: inherit;
     top: 130px;
     left: clamp(30px, -250px + 25vw, 180px);
   }
+
   .buttonContainer {
     position: absolute;
     bottom: -35px;
     width: 350px;
     margin-left: 28%;
   }
+
   .button {
     font-size: 1.125rem;
   }
