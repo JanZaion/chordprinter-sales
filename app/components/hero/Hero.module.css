@@ -147,12 +147,12 @@
   }
 
   .titleInfo {
-    right: 0;
+    right: 20px;
   }
 
   .subtitle {
     position: relative;
-    width: 50%;
+    width: 45%;
     margin-left: 50%;
     top: 110px;
     font-weight: 300;

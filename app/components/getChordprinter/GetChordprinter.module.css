@@ -1,0 +1,15 @@
+.backgroundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-background-light);
+}
+
+.sectionContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 2000px;
+}
