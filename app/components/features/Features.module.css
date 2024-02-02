@@ -29,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-top: 30px;
 }
 
@@ -38,7 +38,7 @@
   border: 2px solid #b9b9b9;
   border-radius: 35px;
   background-color: var(--color-grey);
-  box-shadow: 0px 0px 24.4px 0px var(--color-primary);
+  box-shadow: 0px 0px 15px 0px var(--color-primary);
 }
 
 .text {
@@ -46,4 +46,26 @@
   height: 150px;
   color: var(--color-white);
   font-size: var(--fs-text-small);
+}
+
+.videoContainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  border: none;
+  width: clamp(280px, 40px + 75vw, 1120px);
+  height: clamp(157.5px, 22.5px + 42.188vw, 630px);
+  box-shadow: 0px 0px 208px -28px var(--color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .boxContainer {
+    gap: 50px;
+  }
+  .box {
+    padding: 30px 40px;
+  }
 }
