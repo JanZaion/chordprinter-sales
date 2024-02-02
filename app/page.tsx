@@ -1,3 +1,4 @@
+import Features from './components/features/Features';
 import Hero from './components/hero/Hero';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import styles from './page.module.css';
@@ -8,6 +9,7 @@ const Home = () => (
     <div className={styles.container}>
       <Hero />
       <HowItWorks />
+      <Features />
       <div style={{ width: '100%', height: '5000px' }} />
     </div>
   </main>
