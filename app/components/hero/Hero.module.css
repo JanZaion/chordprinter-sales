@@ -182,7 +182,7 @@
   }
 
   .button {
-    font-size: 1.125rem;
+    font-size: var(--fs-text-small);
   }
 }
 

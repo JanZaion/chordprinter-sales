@@ -42,8 +42,8 @@
 }
 
 .text {
-  width: 300px;
-  height: 150px;
+  width: 250px;
+  height: 170px;
   color: var(--color-white);
   font-size: var(--fs-text-small);
 }
@@ -55,7 +55,8 @@
 }
 
 .video {
-  border: none;
+  border: 1px solid var(--color-white);
+  border-radius: 8px;
   width: clamp(280px, 40px + 75vw, 1120px);
   height: clamp(157.5px, 22.5px + 42.188vw, 630px);
   box-shadow: 0px 0px 208px -28px var(--color-primary);
@@ -66,6 +67,6 @@
     gap: 50px;
   }
   .box {
-    padding: 30px 40px;
+    padding: 25px;
   }
 }
