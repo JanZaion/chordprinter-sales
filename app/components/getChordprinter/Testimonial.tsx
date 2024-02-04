@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import React, { useCallback, useRef } from 'react';
+import React, { useRef } from 'react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import type { SwiperRef } from 'swiper/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,18 +11,40 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+type TestimonialArray = {
+  image: string;
+  reference: string;
+  author: string;
+};
+
 const Testimonial = () => {
   const sliderRef = useRef<SwiperRef>(null);
 
-  const handlePrev = useCallback(() => {
+  const testimonialArray: TestimonialArray[] = [
+    {
+      image: 'chase&status.jpg',
+      reference:
+        "“Chordprinter help us make Badadan. It's extemely powerfull tool.You got ideas in seconds!!!”",
+      author: 'Chase and Status',
+    },
+    {
+      image: 'balron.jpg',
+      reference:
+        '“Už od mala jsem měl rád neurofunk, ale Chordprinter mi otevřel oči a žačal jsem produkovat liqudfunk.”',
+      author: 'Balron',
+    },
+  ];
+
+  const handlePrev = () => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slidePrev();
-  }, []);
+  };
 
-  const handleNext = useCallback(() => {
+  const handleNext = () => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slideNext();
-  }, []);
+  };
+
   return (
     <div className={styles.container}>
       <button
@@ -34,37 +56,48 @@ const Testimonial = () => {
           alt="Arrow"
           className={styles.prevIcongImage}
           height={40}
+          priority
           quality={10}
           src="./arrow.svg"
           width={40}
         />
       </button>
-      <div className={styles.swiperContainer}>
-        <Swiper
-          ref={sliderRef}
-          autoplay={{ delay: 10_000, pauseOnMouseEnter: true }}
-          className={styles.mySwiper}
-          loop
-          modules={[Autoplay, Pagination]}
-          pagination={{ clickable: true }}
-          slidesPerView={1}
-          spaceBetween={100}
-          speed={1400}
-        >
-          <SwiperSlide>
-            <div className={styles.slideBox}>Slide 1</div>
+
+      <Swiper
+        ref={sliderRef}
+        autoplay={{ delay: 10_000, pauseOnMouseEnter: true }}
+        className={styles.slider}
+        loop
+        modules={[Autoplay, Pagination]}
+        pagination={{ clickable: true }}
+        slidesPerView={1}
+        spaceBetween={100}
+        speed={1400}
+      >
+        {testimonialArray.map((slide) => (
+          <SwiperSlide key={slide.author}>
+            <div className={styles.slideBox}>
+              <div className={styles.slideImageBox}>
+                <Image
+                  alt="Artist Image"
+                  className={styles.slideImage}
+                  height={450}
+                  priority
+                  quality={100}
+                  src={`/images/testimonial/${slide.image}`}
+                  width={450}
+                />
+              </div>
+              <p className={styles.referenceText}>{slide.reference}</p>
+              <div className={styles.authorBox}>
+                <span className={styles.line} />
+                <p className={styles.authorText}>{slide.author}</p>
+              </div>
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.slideBox}>Slide 2</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.slideBox}>Slide 3</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.slideBox}>Slide 4</div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
+        ))}
+      </Swiper>
+
       <div className="next">
         <button
           className={styles.navigationButton}
@@ -75,6 +108,7 @@ const Testimonial = () => {
             alt="Arrow"
             className={styles.nextIcongImage}
             height={40}
+            priority
             quality={10}
             src="./arrow.svg"
             width={40}
