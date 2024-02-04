@@ -30,8 +30,25 @@ const Testimonial = () => {
     {
       image: 'balron.jpg',
       reference:
-        '“Už od mala jsem měl rád neurofunk, ale Chordprinter mi otevřel oči a žačal jsem produkovat liqudfunk.”',
+        "“I've always liked neurofunk, but Chordprinter opened my eyes and I started producing liquidfunk.”",
       author: 'Balron',
+    },
+    {
+      image: 'morebeat.jpg',
+      reference:
+        '“With Chordprinter, I finish tracks half a year earlier. This is absolutely amazing!!!”',
+      author: 'Morebeat',
+    },
+    {
+      image: 'subfocus.jpeg',
+      reference:
+        "“Since I released Solar System, I've been having trouble finding a good idea. Chordprinter solved this problem for me.”",
+      author: 'Sub Focus',
+    },
+    {
+      image: 'skrillex.jpeg',
+      reference: "“I've always missed a plugin like Chordprinter in Ableton.”",
+      author: 'Skrillex',
     },
   ];
 
@@ -88,7 +105,9 @@ const Testimonial = () => {
                   width={450}
                 />
               </div>
-              <p className={styles.referenceText}>{slide.reference}</p>
+              <div className={styles.referenceTextBox}>
+                <p className={styles.referenceText}>{slide.reference}</p>
+              </div>
               <div className={styles.authorBox}>
                 <span className={styles.line} />
                 <p className={styles.authorText}>{slide.author}</p>

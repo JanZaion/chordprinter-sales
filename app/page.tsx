@@ -12,7 +12,7 @@ const Home = () => (
       <HowItWorks />
       <Features />
       <GetChordprinter />
-      <div style={{ width: '100%', height: '5000px' }} />
+      <div style={{ width: '100%', height: '500px' }} />
     </div>
   </main>
 );

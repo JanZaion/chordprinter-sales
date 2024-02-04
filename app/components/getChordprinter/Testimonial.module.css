@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 300px;
+  height: fit-content;
   padding: 10px;
 }
 
@@ -13,7 +13,6 @@
   width: 90%;
   max-width: 915px;
   height: 400px;
-  --swiper-navigation-color: var(--color-primary);
   --swiper-pagination-color: var(--color-primary);
   --swiper-navigation-top-offset: 40%;
   --swiper-pagination-top: 370px;
@@ -30,8 +29,8 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background-color: var(--color-primary);
-  opacity: 0.8;
+  background-color: var(--color-grey);
+  opacity: 0.75;
   transition: 0.5s;
   display: none;
 }
@@ -81,12 +80,17 @@
   height: 172px;
 }
 
+.referenceTextBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .referenceText {
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   max-width: 400px;
-  margin: auto auto;
   padding: 10px;
 }
 
@@ -101,7 +105,7 @@
   display: block;
   margin-right: 15px;
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: var(--color-grey);
 }
 
@@ -127,8 +131,8 @@
   }
 
   .slideBox {
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: 180px 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 200px 1fr;
     height: 200px;
     background-color: var(--color-white);
     border-radius: 8px;
