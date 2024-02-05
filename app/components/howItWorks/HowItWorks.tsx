@@ -14,7 +14,9 @@ const HowItWorks = () => (
         <Image
           alt="Chordprinter preview"
           className={styles.images}
+          height={547}
           src={previewGif}
+          width={954}
         />
       </div>
       <div className={styles.textContainer}>
@@ -47,7 +49,9 @@ const HowItWorks = () => (
         <Image
           alt="Chordprinter preview"
           className={styles.images}
+          height={547}
           src={previewGif}
+          width={954}
         />
       </div>
     </div>

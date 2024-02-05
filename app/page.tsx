@@ -1,4 +1,5 @@
 import Features from './components/features/Features';
+import Footer from './components/footer/Footer';
 import GetChordprinter from './components/getChordprinter/GetChordprinter';
 import Hero from './components/hero/Hero';
 import HowItWorks from './components/howItWorks/HowItWorks';
@@ -12,7 +13,7 @@ const Home = () => (
       <HowItWorks />
       <Features />
       <GetChordprinter />
-      <div style={{ width: '100%', height: '500px' }} />
+      <Footer />
     </div>
   </main>
 );
