@@ -28,4 +28,5 @@
   font-size: var(--fs-text-large);
   font-weight: 300;
   color: var(--color-white);
+  margin: 0 10px;
 }
