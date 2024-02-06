@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: var(--fs-content-title);
   color: var(--color-primary);
   margin-bottom: 30px;
