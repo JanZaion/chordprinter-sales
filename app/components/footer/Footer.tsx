@@ -4,6 +4,7 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   const currentYear = getCurrentYear();
+
   return (
     <div className={styles.container}>
       <p className={styles.contactText}>
