@@ -1,3 +1,6 @@
+import Features from './components/features/Features';
+import Footer from './components/footer/Footer';
+import GetChordprinter from './components/getChordprinter/GetChordprinter';
 import Hero from './components/hero/Hero';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import styles from './page.module.css';
@@ -8,7 +11,9 @@ const Home = () => (
     <div className={styles.container}>
       <Hero />
       <HowItWorks />
-      <div style={{ width: '100%', height: '5000px' }} />
+      <Features />
+      <GetChordprinter />
+      <Footer />
     </div>
   </main>
 );

@@ -49,7 +49,7 @@
 }
 
 .container span:nth-child(10) {
-  grid-area: 2 / 4;
+  grid-area: 3 / 4;
 }
 .container span:nth-child(11) {
   grid-area: 7/ 4;
